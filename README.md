@@ -51,14 +51,25 @@ Enable sddm in systemctl
 λ sudo systemctl enable sddm
 ```
 
+Install theme using yay
+
+```sh
+λ yay -S sddm-theme-sugar-candy-git
+```
+
 ### **Configuration and Customization**
 
-Move configurations files to the specific folder
+Link configurations files to the specific folder
 
 ```sh
 λ sudo ln -sf sddm/kde_settings.conf /etc/sddm.conf.d/kde_settings.conf
 ```
 
+Copy the file of theme to it folder (Link the file was not working)
+
+```sh
+λ sudo cp -sf sddm/theme.conf /usr/share/sddm/themes/Sugar-Candy/theme.conf
+```
 
 ## **Terminal Emulator**
 
