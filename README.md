@@ -43,8 +43,6 @@ Use pacman to install sddm
 λ sudo pacman -S sddm
 ```
 
-### **Set up**
-
 Enable sddm in systemctl
 
 ```sh
@@ -59,17 +57,25 @@ Install theme using yay
 
 ### **Configuration and Customization**
 
-Link configurations files to the specific folder
+Copy files to it folders (Link the file was not working)
 
 ```sh
-λ sudo ln -sf sddm/kde_settings.conf /etc/sddm.conf.d/kde_settings.conf
+λ sudo cp sddm/kde_settings.conf /etc/sddm.conf.d/kde_settings.conf
 ```
-
-Copy the file of theme to it folder (Link the file was not working)
 
 ```sh
-λ sudo cp -sf sddm/theme.conf /usr/share/sddm/themes/Sugar-Candy/theme.conf
+λ sudo cp /home/snape/.rice/sddm/Xsetup /usr/share/sddm/scripts/Xsetup
 ```
+
+```sh
+λ sudo cp /home/snape/.rice/sddm/sddm.conf /etc/sddm.conf
+```
+
+```sh
+λ sudo cp sddm/theme.conf /usr/share/sddm/themes/Sugar-Candy/theme.conf
+```
+
+Remember to move the desired Background to the specific folder '/usr/share/sddm/themes/Sugar-Candy/Backgrounds'
 
 ## **Terminal Emulator**
 
@@ -99,3 +105,11 @@ to change any spec of configuration uses the file in this repo
 ## **polybar**
 [TODO]
 
+
+### **Xorg**
+
+Xorg configs
+
+```sh
+λ sudo ln -sf /home/snape/.rice/xorg/dm-multimonitor.sh /etc/X11/xorg.conf.d/dm-multimonitor.sh
+```
