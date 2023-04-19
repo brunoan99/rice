@@ -225,3 +225,6 @@ workspace 5  output DP-2
 
 ## numlock activate on startup ##
 exec_always --no-startup-id numlockx on
+
+## polkit ##
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
