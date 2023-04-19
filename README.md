@@ -35,6 +35,14 @@ The i3 config file already contain the starter to the polkit.
 
 **SDDM**
 
+### Test
+
+To test use the command, using it isn't necessary to log off
+
+```
+λ sddm-greeter --test-mode --theme /usr/share/sddm/themes/Sugar-Candy
+```
+
 ### **Installation**
 
 Use pacman to install sddm

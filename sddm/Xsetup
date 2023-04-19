@@ -1,13 +1,17 @@
 #!/bin/sh
+# Xsetup - run as root before the login dialog appears
+
+xrandr --output HDMI-0 --off
+#!/bin/sh
 # get the correct actual monitor names with
 # xrandr | awk ' /connected/ { print $1, $2 }'
-mon1=VGA-1-1
-mon2=HDMI-0
-# wait 3
-if xrandr | grep "$mon2 disconnected"; then
-    xrandr --output "$mon2" --off --output "$mon1" --auto
-elif xrandr | grep "$mon1 disconnected"; then
-    xrandr --output "$mon1" --off --output "$mon2" --auto
-else
-    xrandr --output "$mon1" --auto --output "$mon2" --right-of "$mon1" --auto
-fi#!/bin/sh
+# mon1=DP-2
+# mon2=HDMI-0
+#  wait 3
+# if xrandr | grep "$mon1 disconnected"; then
+#     xrandr --output "$mon2" --off --output "$mon1" --auto
+# elif xrandr | grep "$mon1 disconnected"; then
+#     xrandr --output "$mon1" --off --output "$mon2" --auto
+# else
+#     xrandr --output "$mon1" --auto --output "$mon2" --off
+# fi
