@@ -68,10 +68,6 @@ Install theme using yay
 Copy files to it folders (Link the file was not working)
 
 ```sh
-λ sudo cp sddm/kde_settings.conf /etc/sddm.conf.d/kde_settings.conf
-```
-
-```sh
 λ sudo cp /home/snape/.rice/sddm/Xsetup /usr/share/sddm/scripts/Xsetup
 ```
 
