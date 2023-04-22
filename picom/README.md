@@ -3,7 +3,7 @@
 ## **Installation**
 
 ```sh
-yay -S picom-jonaburg-git
+λ sudo pacman -S picom
 ```
 
 ## **Configuration**
