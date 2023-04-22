@@ -4,18 +4,14 @@
 
 First clone the project into '.rice' directory
 
-
 ```sh
 λ gh repo clone brunoan99/rice $HOME/.rice
 ```
 
-
-## **General**
-
 For easily configuration, do all comands inside this repo.
 
 ```sh
-λ cd $repo_name
+λ cd $HOME/.rice
 ```
 
 ## Add-ons
@@ -31,5 +27,3 @@ For easily configuration, do all comands inside this repo.
 **WM** -> **i3**
 
 **X11** -> **[Xorg configs](./xorg/Readme.md)**
-
-Xorg configs
