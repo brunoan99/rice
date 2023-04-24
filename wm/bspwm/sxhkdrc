@@ -22,14 +22,6 @@ super + shift + c
 super + m
 	bspc desktop -l next
 
-# send the newest marked node to the newest preselected node
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
-
-# swap the current node and the biggest node
-super + g
-	bspc node -s biggest
-
 
 # STATE/FLAGS
 
@@ -70,10 +62,13 @@ super + {o,i}
 	bspc node {older,newer} -f; \
 	bspc wm -h on
 
-# focus or send to the given desktop
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} focused:'^{1-9,10}'
+# focus on desktop
+super + {1,2,3,4,5,6,7,8,9,0}
+  bspc desktop -f {1,2,3,4,5,6,7,8,9,0}
 
+
+super + shift + {1-9,0}
+  bspc node -d '^{1-9,10}'
 
 # PRESELECT
 
