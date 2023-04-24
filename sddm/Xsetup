@@ -2,14 +2,12 @@
 # Xsetup - run as root before the login dialog appears
 
 # get the correct actual monitor names with
-# xrandr | awk ' /connected/ { print $1, $2 }'
-mon1=DP-2
-mon2=HDMI-0
-
-sleep .5
-if xrandr | grep "$mon1 disconnected"; then
-    xrandr --output "$mon2" --auto
+sleep 0.5
+if [[ $(xrandr -q | grep "HDMI-0 disconnected" )]];
+then
+  xrandr --output DP-2 --auto
+elif [[ $(xrandr -q | grep "DP-2 disconnected" )]];
+  xrandr --output HDMI-0 --auto
 else
-    xrandr --output "$mon1" --auto
+  xrandr --output DP-2 --rotate normal --output HDMI-0 --rotate normal --left-of DP-2
 fi
-
