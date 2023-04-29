@@ -24,6 +24,14 @@ For easily configuration, do all comands inside this repo.
 
 **Compositor** -> **[Picom](./picom/README.md)**
 
-**WM** -> **i3**
+**WM** -> **[bspwm](./wm/bspwm/README.md)**
+
+**Polybar** -> **[Polybar](./polybar/README.md)**
 
 **X11** -> **[Xorg configs](./xorg/Readme.md)**
+
+[TODO]
+* rofi -> install, setup and config
+* autostart script -> start any application needed
+* powermenu -> use rofi
+
