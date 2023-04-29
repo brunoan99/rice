@@ -5,11 +5,7 @@
 sxhkd &
 picom &
 killall nm-applet && nm-applet &
-polybar &
-
-
-#### VARIABLES ####
-# COLORSCHEME="Dracula"
+$HOME/.config/polybar/launch.sh &
 
 ## Background
 
@@ -31,6 +27,8 @@ bspc config gapless_monocle      true
 
 bspc rule -a mplayer2 state=floating
 bspc rule -a Screenkey manage=off
+bspc rule -a Android Emulator state=floating
+bspc rule -a Emulator state=floating
 
 ## Border Colors
 bspc config normal_border_color "#333333"
