@@ -6,12 +6,20 @@
 λ sudo pacman -S picom
 ```
 
-## **Configuration**
+## **Setup**
 
-create a link to this repo file to a file in config folder
+Frist create the config folder
+
+```sh
+λ mkdir -p $HOME/.config/picom
+```
+
+Link config files to the config folder
 
 ```sh
 λ ln -sf $HOME/.rice/picom/picom.conf $HOME/.config/picom/picom.conf
 ```
 
-to change any spec of configuration uses the file in this repo
+## **Configuration**
+
+To change any spec of configuration uses the file in this repo instead of change in config folder directly
