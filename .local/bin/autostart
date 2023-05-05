@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Applications to start
+
+# bspwm keybindings daemon
+sxhkd &
+
+# compositor
+picom &
+
+# wallpaper
+nitrogen --restore &
+
+# network-manager
+killall nm-applet && nm-applet &
+
+# polybar init
+$HOME/.config/polybar/launch.sh
+
+# monitor setup
+xrandr --output DP-2 --auto --output HDMI-0 --left-of DP-2
+
