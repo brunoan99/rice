@@ -105,5 +105,13 @@ super + Return
 	alacritty
 
 # dmenu
+super + e
+  rofi -show window -m -1
+
+# dmenu
 super + d
-  dmenu_run
+  rofi -show drun -m -1
+
+# spawm power options using rofi
+super + shift + x
+	$HOME/.local/bin/powermenu
