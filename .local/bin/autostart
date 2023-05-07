@@ -8,6 +8,9 @@ sxhkd &
 # compositor
 picom &
 
+# keyboard bindings
+xmodmap $HOME/.Xmodmap &
+
 # wallpaper
 nitrogen --restore &
 
