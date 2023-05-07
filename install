@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Install the each component
+for file in $(find . -type f -path '*/**install.sh' | sed 's/^\.\///g');
+do sh -c $file;
+done
