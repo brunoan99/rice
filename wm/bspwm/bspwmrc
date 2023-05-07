@@ -1,11 +1,9 @@
 #!/bin/sh
 
 ## Start
-
-$HOME/.local/bin/autostart
+$HOME/.local/bin/autostart &
 
 # Monitors
-
 bspc monitor HDMI-0 -d 1 2 3 4 # then some workspaces goes to HDMI
 bspc monitor DP-2 -d 5 6 7 8 9 0 # and some workspaces goes to DP
 
@@ -17,9 +15,13 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Screenkey manage=off
-bspc rule -a Android Emulator state=floating
-bspc rule -a Emulator state=floating
+
+## Rules
+bspc rule -a "Android Emulator" manage=off
+bspc rule -a "Emulator"         manage=off
+bspc rule -a "Google-chrome"    desktop=^5
+bspc rule -a "discord"          desktop=^6
+bspc rule -a "tidal-hifi"       desktop=^7
 
 ## Border Colors
 bspc config normal_border_color "#333333"
