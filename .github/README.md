@@ -12,11 +12,11 @@ Bar
 
 Menus
 
-- Power: <br/> <img src="./images/rofi-powermenu.png" alt="Rofi powermenu" width="40%" height="40%"/>
+- Power: <br/> <img src="./images/rofi-powermenu.png" alt="Rofi powermenu" width="50%" height="50%"/>
 
-- Running applications: <br/> <img src="./images/rofi-menu.png" alt="Rofi Running applications menu" width="40%" height="40%"/>
+- Running applications: <br/> <img src="./images/rofi-menu.png" alt="Rofi Running applications menu" width="50%" height="50%"/>
 
-- Open applications: <br/> <img src="./images/rofi-drun.png" alt="Rofi Open applications menu" width="40%" height="40%"/>
+- Open applications: <br/> <img src="./images/rofi-drun.png" alt="Rofi Open applications menu" width="50%" height="50%"/>
 
 ## **Add-ons**
 
