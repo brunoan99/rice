@@ -14,7 +14,46 @@ For easily configuration, do all comands inside this repo.
 λ cd $HOME/.rice
 ```
 
-## Add-ons
+## **Install**
+
+To install add-ons run the command:
+
+```
+λ ./install
+```
+
+To install one specifically run the command:
+
+```
+λ ./${path-add-on}/install.sh
+```
+
+
+## **Setup**
+
+To setup add-ons and scripts run the command:
+
+```
+λ ./setup
+```
+
+To setup one specifically run the command:
+
+```
+λ ./${path-add-on}/install.sh
+```
+
+## **Configuration**
+
+To change any spec of configuration uses the file in this repo instead of change in config folder directly
+
+Maybe is necessary to run setup script after change something, cause some configs are done with copy instead of link, than is needed to copy again to apply the changes.
+
+## **Shell Scripts**
+
+Shell scripts are placed in .local/bin
+
+## **Add-ons**
 
 **PolicyKit** -> **[Polkit-Gnome](./polkit/Readme.md)**
 
@@ -30,8 +69,4 @@ For easily configuration, do all comands inside this repo.
 
 **X11** -> **[Xorg configs](./xorg/Readme.md)**
 
-[TODO]
-* rofi -> install, setup and config
-* autostart script -> start any application needed
-* powermenu -> use rofi
-
+**Menu** -> **[Rofi](./rofi/Readme.md)**
