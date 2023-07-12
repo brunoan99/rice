@@ -112,6 +112,10 @@ super + e
 super + d
   rofi -show drun -m -1
 
+# print
+super + shift + p
+	flameshot gui
+
 # spawm power options using rofi
 super + shift + x
 	$HOME/.local/bin/powermenu

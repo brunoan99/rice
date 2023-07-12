@@ -17,11 +17,13 @@ bspc config gapless_monocle      true
 
 
 ## Rules
+bspc rule -a "Alacritty"        state=floating
 bspc rule -a "Android Emulator" manage=off
 bspc rule -a "Emulator"         manage=off
 bspc rule -a "Google-chrome"    desktop=^5
 bspc rule -a "discord"          desktop=^6
 bspc rule -a "tidal-hifi"       desktop=^7
+bspc rule -a "Visual Studio Code"             desktop=^2
 
 ## Border Colors
 bspc config normal_border_color "#333333"
