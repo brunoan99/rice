@@ -24,10 +24,7 @@ $HOME/.config/polybar/launch.sh
 xrandr --output DP-2 --auto --output HDMI-0 --left-of DP-2 &
 
 # usual applications
-google-chrome-stable &
+opera &
 discord &
-tidal-hifi &
 flameshot &
 solaar
-
-
