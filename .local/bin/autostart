@@ -23,6 +23,8 @@ $HOME/.config/polybar/launch.sh
 # monitor setup
 xrandr --output DP-2 --auto --output HDMI-0 --left-of DP-2 &
 
+xmodmap $HOME/.Xmodmap &
+
 # usual applications
 opera &
 discord &
