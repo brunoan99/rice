@@ -27,6 +27,5 @@ xmodmap $HOME/.Xmodmap &
 
 # usual applications
 opera &
-discord &
 flameshot &
 solaar --window=hide
