@@ -14,20 +14,20 @@ scrolling:
 
 font:
   normal:
-    family: JetBrains Mono Nerd Font
+    family: JetBrainsMonoNL
     style: Medium
   bold:
-    family: JetBrains Mono Nerd Font
+    family: JetBrainsMonoNL
     style: Bold
   italic:
-    family: JetBrains Mono Nerd Font
+    family: JetBrainsMonoNL
     style: MediumItalic
   bold_italic:
-    family: JetBrains Mono Nerd Font
+    family: JetBrainsMonoNL
     style: BoldItalic
   size: 11
   offset:
-    x: 0
+    x: 1
     y: 1
 
 
