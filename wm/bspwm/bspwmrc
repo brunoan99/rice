@@ -24,6 +24,7 @@ bspc rule -a "Emulator"         manage=off
 bspc rule -a "librewolf"				desktop=^5
 bspc rule -a "Opera"						desktop=^6
 bspc rule -a "discord"          desktop=^7
+bspc rule -a "thunderbird"			desktop=^8
 
 ## Border Colors
 bspc config normal_border_color "#333333"
