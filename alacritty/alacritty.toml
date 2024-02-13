@@ -105,6 +105,6 @@ x = 10
 y = 10
 
 [[keyboard.bindings]]
-action = "None"
+action = "ReceiveChar"
 key = "j"
 mods = "Control"
